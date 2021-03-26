@@ -9,19 +9,19 @@ Lets do this for two RDBMS, Postgres and MySQL. Here for configuration of DBs, w
  3. TransactionManager.
 
 # Postgres (Db1)
-Postgres Database Commands:
-cmd>psql -U postgres
-create database db1
-\c db1
-\dt
-select * from product;
+Postgres Database Commands: <br>
+cmd>psql -U postgres <br>
+create database db1 <br>
+\c db1 <br>
+\dt <br>
+select * from product; <br>
 
 # MySQL (Db2)
-MySQL Database Commands:
-create database db2;
-use db2;
-show tables;
-select * from customer;
+MySQL Database Commands: <br>
+create database db2; <br>
+use db2; <br>
+show tables; <br>
+select * from customer; <br>
 
 # Steps to follow:
 
@@ -31,7 +31,7 @@ select * from customer;
 3. Write your two model/entity classes, one each for Postgres & MySQL. We wrote product and customer.
 4. Have to write two Repositories as well :- CustomerRepository and ProductRepository.
 5. The most important : write two config class, one each for Postgres & MySQL Databases.
-6. Runner for inserting data(or write your save methods):
-    http://localhost:8080/products
-    http://localhost:8080/customer
-7. RestController to fetch data.
+6. Runner for inserting data(or write your save methods).
+7. RestController to fetch data. <br>
+    http://localhost:8080/products <br>
+    http://localhost:8080/customer 
