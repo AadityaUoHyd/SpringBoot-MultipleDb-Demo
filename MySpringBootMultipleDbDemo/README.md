@@ -3,10 +3,10 @@ Spring Boot Data JPA by default supports connection with one db via Autoconfigur
 inputs(e.g - driver class, url, username, password, dialect, etc.) in properties files and spring-boot takes care of rest.
 
 But to create multiple DB in one service, we need to configure it by ourselves using java configuration style.
-Lets do this for two RDBMS, PostgreSQL and MySQL. Here for configuration of DBs, we need objects(beans) of :-
- 1. DataSource, 
- 2. EntityManagerFactory, and 
- 3. TransactionManager.
+Lets do this for two RDBMS, PostgreSQL and MySQL. Here for configuration of DBs, we need objects(beans) of implementation classes of:-
+ 1. DataSource (Interface), 
+ 2. EntityManagerFactory (Interface), and 
+ 3. TransactionManager (Interface).
 
 # PostgreSQL (Db1)
 PostgreSQL Database Commands: <br>
@@ -35,3 +35,5 @@ select * from customer; <br>
 7. RestController to fetch data. <br>
     http://localhost:8080/products <br>
     http://localhost:8080/customer 
+    
+References : https://www.baeldung.com/spring-data-jpa-multiple-databases 
